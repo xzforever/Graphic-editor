@@ -13,6 +13,7 @@ namespace _2article3_2_2
         public void Draw()
         {
             PreDraw();
+            //Горизонтальные
             for (int n = 0; n < 2; n++)
             {
                 for (int i = 0; i < Length; i++)
@@ -23,14 +24,19 @@ namespace _2article3_2_2
             }
             Console.SetCursorPosition(X,Y);
             _e = Y;
+            bool trigger = false;
+            //Вертикальные
             for (int n = 0; n < 2; n++)
             {
                 for (int i = 0; i < Length; i++)
                 {
                     Console.Write($"{Symbol}");
-                    Console.SetCursorPosition(X,++_e);
+                    if (!trigger) Console.SetCursorPosition(X, ++_e);
+                    else Console.SetCursorPosition(X+Length-1, ++_e);
+
                 }
                 _e = Y;
+                trigger = true;
                 Console.SetCursorPosition(X + Length - 1, Y);
             }
             Console.ReadLine();

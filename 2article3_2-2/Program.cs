@@ -17,6 +17,23 @@ namespace _2article3_2_2
             square.Length = 4;
             square.Symbol = "0";
             square.Draw();
+
+            Rectangle rectangle = new Rectangle();
+            rectangle.X = 10;
+            rectangle.Y = 10;
+            rectangle.Color = ConsoleColor.Blue;
+            rectangle.Width = 5;
+            rectangle.Height = 3;
+            rectangle.Symbol = "*";
+            rectangle.Draw();
+
+            Triangle triangle = new Triangle();
+            triangle.X = 20;
+            triangle.Y = 20;
+            triangle.Color = ConsoleColor.Green;
+            triangle.Lenghth = 4;
+            triangle.Symbol = "+";
+            triangle.Draw();
         }
     }
 }
