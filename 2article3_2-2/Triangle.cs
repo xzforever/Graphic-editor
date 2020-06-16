@@ -9,8 +9,8 @@ namespace _2article3_2_2
     class Triangle: Content
     {
         public int Lenghth { get; set; }
-        private int _q;
-        private int _e;
+        int _q;
+        int _e;
         public void Draw()
         {
             _q = X;

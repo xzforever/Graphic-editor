@@ -9,7 +9,7 @@ namespace _2article3_2_2
     class Square : Content
     {
         public int Length { get; set; }
-        private int _e;
+        int _e;
         public void Draw()
         {
             PreDraw();
