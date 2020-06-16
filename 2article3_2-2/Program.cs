@@ -10,29 +10,13 @@ namespace _2article3_2_2
     {
         static void Main(string[] args)
         {
-            Square square = new Square();
-            square.X = 1;
-            square.Y = 1;
-            square.Color = ConsoleColor.Red;
-            square.Length = 4;
-            square.Symbol = "0";
+            Square square = new Square(4,1,1,ConsoleColor.Red,"0");
             square.Draw();
 
-            Rectangle rectangle = new Rectangle();
-            rectangle.X = 10;
-            rectangle.Y = 10;
-            rectangle.Color = ConsoleColor.Blue;
-            rectangle.Width = 5;
-            rectangle.Height = 3;
-            rectangle.Symbol = "*";
+            Rectangle rectangle = new Rectangle(3,5,10,10,ConsoleColor.Blue,"*");
             rectangle.Draw();
 
-            Triangle triangle = new Triangle();
-            triangle.X = 20;
-            triangle.Y = 20;
-            triangle.Color = ConsoleColor.Green;
-            triangle.Lenghth = 4;
-            triangle.Symbol = "+";
+            Triangle triangle = new Triangle(4,20,20,ConsoleColor.Green, "+");
             triangle.Draw();
         }
     }

@@ -8,6 +8,15 @@ namespace _2article3_2_2
 {
     class Square : Content
     {
+        public Square(int length, int x, int y, System.ConsoleColor color, string symbol)
+            :base(x,y,color, symbol)
+        {
+            X = x;
+            Y = y;
+            Color = color;
+            Symbol = symbol;
+            Length = length;
+        }
         public int Length { get; set; }
         int _e;
         public void Draw()

@@ -9,6 +9,16 @@ namespace _2article3_2_2
 {
     class Rectangle : Content
     {
+        public Rectangle(int height, int width, int x, int y, System.ConsoleColor color, string symbol)
+            :base(x, y, color, symbol)
+        {
+            X = x;
+            Y = y;
+            Color = color;
+            Symbol = symbol;
+            Height = height;
+            Width = width;
+        }
         public int Height { get; set; }
         public int Width { get; set; }
         int _e;
